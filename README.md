@@ -19,9 +19,9 @@ A simple Spotify web frontend clone built using HTML and CSS.
 
 ## How to Use
 1. Clone the repository:
-   ```git clone https://github.com/yourusername/spotify-web-frontend.git```
+   ```git clone https://github.com/hxrshh0515/spotify-clone-html-css.git```
 2. Navigate to the project folder:
-   ```cd spotify-web-frontend```
+   ```cd spotify-clone-html-css.git```
 3. Open `index.html` in your browser.
 
 ## Future Improvements
