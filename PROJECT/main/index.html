@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./ICONS/logo2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="index.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div id="main">
+        <div id="topbar">
+            <div id="spotlogo"></div>
+            <div id="homebtn">
+                <span class="material-symbols-outlined">home</span>
+            </div>
+            <div id="topbarcenter">
+                <span id="tbcsearch"class="material-symbols-outlined">search</span>
+                <input type="text" id="songinp" placeholder="What do you want to play">
+                <span id="tbcr"><span class="material-symbols-outlined">select_window</span></span>
+            </div>
+            <div id="topbarend">
+                <div id="install">
+                    <span id="down" class="material-symbols-outlined">download_for_offline</span>
+                    <p>Install App</p>
+                </div>
+                <span id="bellicn" class="material-symbols-outlined ">notifications</span>
+                <div id="hlog"></div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="library">
+                <div id="mainlib">
+                    <div id="mainlibleft">
+                        <span class="material-symbols-outlined icn">library_music</span>
+                        <p>Your Library</p>
+                    </div>
+                    <div id="mainlibright">
+                        <span class="material-symbols-outlined icn">add</span>
+                        <span class="material-symbols-outlined icn">arrow_forward</span>
+                    </div>
+                </div>
+                <div id="libbtns">
+                    <button class="btn" id="pbtn">Playlists</button>
+                    <button class="btn" id="pbtn">Artists</button>
+                </div>
+            </div>
+            <div id="nav">
+                <div id="srch">
+                    <span class="material-symbols-outlined" id="srchbtn">search</span>
+                    <div id="recent">
+                        <p>Recents<span class="material-symbols-outlined">list</span></p>
+                    </div>
+                </div>
+                <div id="scrl">
+                    <ul style="list-style:none">
+                        <li class="scrlitem"><div class="img img1"></div> <p><span class="name">The Chainsmokers</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img2"></div> <p><span class="name">Pop Smoke</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img3"></div> <p><span class="name">Lil Peep</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img4"></div> <p><span class="name">Juice World</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img5"></div> <p><span class="name">Eminem</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img6"></div> <p><span class="name">Martin Garrix</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img7"></div> <p><span class="name">Alan Walker</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img8"></div> <p><span class="name">Pitbull</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img9"></div> <p><span class="name">Akcent</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img10"></div> <p><span class="name">Kygo</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img11"></div> <p><span class="name">Maroon 5</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img12"></div> <p><span class="name">Justin Bieber</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img13"></div> <p><span class="name">Flo Rida</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img14"></div> <p><span class="name">The Weekend</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img15"></div> <p><span class="name">Michelle Morrone</span> <br>Artist</p></li>
+                        <li class="scrlitem"><div class="img img16"></div> <p><span class="name">Lil Tjay</span> <br>Artist</p></li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="mainbar">
+            <div id="gradeffect">
+                <div id="mainbarnav">
+                    <div id="contain">
+                        <div class="mba" id="b1">All</div>
+                        <div class="mba" id="b2">Music</div>
+                        <div class="mba" id="b3">Podcast</div>
+                    </div>
+                </div>
+                <div id="mainbartop">
+                    <div class="em" id="elem1">
+                        <div class="elemimg" id="eimg1"></div>
+                        <p>Daily Mix 1</p>
+                    </div>
+                    <div class="em" id="elem2">
+                        <div class="elemimg" id="eimg2"></div>
+                        <p>Liked Song</p>
+                    </div>
+                    <div class="em"  id="elem3">
+                        <div class="elemimg" id="eimg3"></div>
+                        <p>The Weekend</p>
+                    </div>
+                    <div class="em"  id="elem4">
+                        <div class="elemimg" id="eimg4"></div>
+                        <p>17</p>
+                    </div>
+                    <div class="em"  id="elem5">
+                        <div class="elemimg" id="eimg5"></div>
+                        <p>Jackboys</p>
+                    </div>
+                    <div class="em"  id="elem6">
+                        <div class="elemimg" id="eimg6"></div>
+                        <p>Lil Peep</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="h" id="h1">Made for Harsh.Baradhan</h2>
+            <div id="madeforu">
+                <div class="card" id="c1">
+                    <div class="miximg" id="miximg1"></div>
+                    <p class="mixp">The Chainsmokers,<br>Shawn Mendes,...</p>
+                </div>
+                <div class="card" id="c2">
+                    <div class="miximg" id="miximg2"></div>
+                    <p class="mixp">Ludacris,Pitbull<br>Future and more</p>
+                </div>
+                <div class="card" id="c3">
+                    <div class="miximg" id="miximg3"></div>
+                    <p class="mixp">HVME,Besomorph<br>Lizot and more</p>
+                </div>
+                <div class="card" id="c4">
+                    <div class="miximg" id="miximg4"></div>
+                    <p class="mixp">Five Finger Death<br>Punch,Bad Wolves,l...</p>
+                </div>
+                <div class="card" id="c5">
+                    <div class="miximg" id="miximg5"></div>
+                    <p class="mixp">Rick Ross,<br>XXXTENTACION, ...</p>
+                </div>
+                <div class="card" id="c6">
+                    <div class="miximg" id="miximg6"></div>
+                    <p class="mixp">Marshmello,Eminem,<br>Lord Huron and more</p>
+                </div>
+                <div class="card" id="c7">
+                    <div class="miximg" id="miximg7"></div>
+                    <p class="mixp">Shawn Mendes,<br>Martin Garrix...</p>
+                </div>
+            </div>
+            <h2 class="h" id="h2">Based on your recent listening</h2>
+            <div id="madeforu1">
+                <div class="card" id="c1">
+                    <div class="miximg" id="miximg8"></div>
+                    <p class="mixp">Eminem</p>
+                </div>
+                <div class="card" id="c2">
+                    <div class="miximg" id="miximg9"></div>
+                    <p class="mixp">Kygo</p>
+                </div>
+                <div class="card" id="c3">
+                    <div class="miximg" id="miximg10"></div>
+                    <p class="mixp">Calvin Harris</p>
+                </div>
+                <div class="card" id="c4">
+                    <div class="miximg" id="miximg11"></div>
+                    <p class="mixp">DJ Snake</p>
+                </div>
+                <div class="card" id="c5">
+                    <div class="miximg" id="miximg12"></div>
+                    <p class="mixp">Avicci</p>
+                </div>
+                <div class="card" id="c6">
+                    <div class="miximg" id="miximg13"></div>
+                    <p class="mixp">Lil Peep, <br> XXXTENTACION</p>
+                </div>
+                <div class="card" id="c7">
+                    <div class="miximg" id="miximg14"></div>
+                    <p class="mixp">Michelle Morrone</p>
+                </div>
+            </div>
+            <h2 class="h" id="h3">Recently Played</h2>
+            <div id="madeforu2">
+                <div class="cardr" id="c1">
+                    <div class="miximgr" id="rimg1"></div>
+                    <p class="mixpr">Paranoia (feat<br>Gunna & Young)</p>
+                </div>
+                <div class="cardr" id="c6">
+                    <div class="miximgr" id="rimg6"></div>
+                    <p class="mixpr">Jackboys</p>
+                </div>
+                <div class="cardr" id="c2">
+                    <div class="miximgr" id="rimg2"></div>
+                    <p class="mixpr">Daily Mix1</p>
+                </div>
+                <div class="cardr" id="c3">
+                    <div class="miximgr" id="rimg3"></div>
+                    <p class="mixpr">Liked Songs</p>
+                </div>
+                <div class="cardr" id="c5">
+                    <div class="miximgr" id="rimg5"></div>
+                    <p class="mixpr">The Weekend</p>
+                </div>
+                <div class="cardr" id="c4">
+                    <div class="miximgr" id="rimg4"></div>
+                    <p class="mixpr">17</p>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                <div id="company">
+                    <ul>
+                        <h3 style="color:white;">Company</h3>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+                <div id="community">
+                    <ul>
+                        <h3 style="color:white;">Communities</h3>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+                <div id="Links">
+                    <ul>
+                        <h3 style="color:white;">Usefull Links</h3>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                       
+                    </ul>
+                </div>
+                <div id="spotplan"><ul>
+                    <h3 style="color:white;">Spotify Plans</h3>
+                    <li>Premium Individual</li>
+                    <li>Premium Duo</li>
+                    <li>Premium Family</li>
+                    <li>Premium Student</li>
+                    <li>Spotify Free</li>
+                </ul></div>
+            </div>
+            <div id="bfoot">
+                <ul>
+                    <li>Legal</li>
+                    <li>Safety and Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Ads</li>
+                    <li>Accssibility</li>
+                </ul>
+                <span id="copyright">&copy;2025 Spotify AB </span>
+            </div>
+
+        </div>
+        <div id="playbar">
+            <div id="pbleft">
+                <div id="currsong"></div>
+                <div id="abtsong">
+                    <p id="up">Paranoia(feat.Gunna & Young Thug)</p>
+                    <p id="Down">Pop Smoke,Gunna,Young Thug</p>
+                </div>
+            </div>
+            <div id="pbcenter">
+                <div id="cont">
+                    <div class="picn" id="shuffle"></div>
+                    <div class="picn" id="prev"></div>
+                    <div class="picn" id="PLAY"></div>
+                    <div class="picn" id="next"></div>
+                    <div class="picn" id="repeat"></div>
+                </div>
+                <div id="PR">
+                    <span id="currtime">0:00</span>
+                    <input id="playrange" type="range" min="0" max="100">
+                    <span id="endtime">3:32</span>
+                </div>
+            </div>
+            <div id="pbright">
+                <div id="cicns">
+                    <div class="cicn" id="play"></div>
+                    <div class="cicn" id="mic"></div> 
+                    <div class="cicn" id="queue"></div>
+                    <div class="cicn" id="conn"></div>
+                    <div class="cicn" id="spk"></div>
+                    <input type="range" id="vol">
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,985 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    height:100vh;
+    column-gap: 10px;
+    position:relative;
+    background-color:black;
+}
+
+
+
+#topbar{
+    height:100%;
+    grid-row:1/2;
+    grid-column:1/13;
+    position:relative;
+    display:flex;
+    overflow: visible;
+}
+#spotlogo{
+    height:45px;
+    width:45px;
+    border-radius:50%;
+    background-color: white;
+    position:absolute;
+    left:25px;
+    bottom:15px;
+    background-image: url("slogo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#homebtn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color:#1f1f1f;
+    position:absolute;
+    left:465px;
+    bottom:10px;
+}
+#homebtn span{
+    color:rgba(255, 255, 255, 0.864);
+    transform:scale(1.6);
+    position:absolute;
+    top:10px;
+    left:13px;
+}
+#topbarcenter{
+    height:50px;
+    width:450px;
+    border-radius:50px;
+    background-color:#1f1f1f;
+    position:absolute;
+    bottom:10px;
+    left:525px;
+}
+#tbcsearch{
+    position:absolute;
+    top:12px;
+    left:12px;
+    transform: scale(1.2);
+    color:#b3b3b3;
+}
+#songinp{
+    width:300px;
+    background-color: inherit;
+    border:none;
+    position:absolute;
+    top:14px;
+    left:50px;
+    font-size:15px;
+    color:white;
+}
+input:focus {
+    outline: none;
+    border: 1px solid black; /* Keeps a defined border */
+    box-shadow: none;
+}
+
+#songinp::placeholder {
+    color:#b3b3b3;
+}
+#tbcr{
+    height: 25px;
+    width: 35px;
+    position:absolute;
+    top:12px;
+    right:15px;
+    transform: scale(1.2);
+    color:#b3b3b3;
+    display: inline-block;  /* Or block */
+    border-left: .8px solid #b3b3b3;
+}
+#tbcr span{
+    margin-left:8px;
+}
+#topbarend{
+    height:100%;
+    width:200px;
+    position:absolute;
+    right:10px;
+    /* background-color: white; */
+
+}
+#install{
+    height: 75%;
+    color:#b3b3b3;
+    position:absolute;
+    bottom:5px;
+    font-size: .8em;
+    width:150px;
+}
+#install p{
+    position:absolute;
+    width:auto;
+    right:80px;
+    top:25px;
+}
+/* #install{
+    font-size: .8em;
+    width:150px;
+} */
+#down{
+    position:absolute;
+}
+#bellicn{
+    position:absolute;
+    right:65px;
+    top:25px;
+    color:#b3b3b3;
+}
+#hlog{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    border-width: 10px;
+    background-color: white;
+    position:absolute;
+    right:10px;
+    bottom:15px;
+    background-image: url("hlogo.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition-duration: .5s;
+}
+#hlog:hover{
+   transform:scale(1.15);
+}
+
+
+
+#sidebar{
+    grid-row:2/12;
+    grid-column:1/4;
+    background-color:#121212;
+    height:100%;
+    color:#b3b3b3;
+    border-radius:12px;
+}
+#library{
+    height:110px;
+    position:relative;
+}
+#mainlib{
+    height:40px;
+    display:flex;
+    position:relative;
+}
+#mainlibleft{
+    display:flex;
+    position:relative;
+    font-weight:100;
+}
+#mainlibright{
+    position:absolute;
+    right:15px;
+    font-weight:100;
+}
+#mainlibleft .icn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#mainlibleft p{
+    font-size:1.1em;
+    display:flex;
+    align-items: flex-end;
+}
+
+#mainlibright{
+    display:flex;
+    position:absolute;
+    bottom:0;
+    font-weight:100;
+}
+#mainlibright .icn{
+    margin-left:8px;
+    margin-right:8px;
+}
+.icn {
+    font-size:1.6em;
+    display:flex;
+    align-items: flex-end;
+}
+#libbtns{
+    position:absolute;
+    bottom:12px;
+    left:20px;
+}
+.btn{
+    width:72px;
+    height:30px;
+    color:white;
+    padding:5px 7px 5px 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:#ffffff1A;
+    border-radius:15px;
+    font-weight:100;
+    font-size:.8em;
+    border:none;
+    transition-duration: .5s;
+}
+.btn:hover{
+    background-color: #ffffff27;
+}
+#nav{
+    height:100%;
+}
+#srch{
+    height:35px;
+    display:flex;
+    position:relative;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+#srchbtn{
+    position:absolute;
+    bottom:0;
+    left:5px;
+}
+#recent p{
+    position:absolute;
+    bottom:0;
+    right:45px;
+    font-weight:100;
+}
+#recent p span{
+    position:absolute;
+    bottom:0;
+    margin-left:8px;
+    margin-right:10px;
+}
+#scrl{
+    height:100%;
+    position:relative;
+}
+#scrl ul{
+    height:73%;
+    overflow:scroll;
+}
+.scrlitem{
+    height:62px;
+    display:flex;
+    align-items: center;
+}
+.scrlitem:hover{
+    background-color:#2b2b2ba3;
+}
+.img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-image: url('chainsmokers.jpeg');
+    background-size: cover; 
+    background-position: center;
+    margin-left:5px;
+    margin-right: 5px;
+}
+.img1{
+    background-image: url('chainsmokers.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img2{
+    background-image: url('popsmoke.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img3{
+    background-image: url('lilpeep.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img4{
+    background-image: url('juice.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img5{
+    background-image: url('eminem.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img6{
+    background-image: url('martingarrix.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img7{
+    background-image: url('alan.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img8{
+    background-image: url('./pitbull.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img9{
+    background-image: url('./akcent.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img10{
+    background-image: url('./kygo.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img11{
+    background-image: url('./m5.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img12{
+    background-image: url('./jb.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img13{
+    background-image: url('./fr.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img14{
+    background-image: url('./tw.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img15{
+    background-image: url('./mm.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+.img16{
+    background-image: url('./tjay.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.name{
+    color:white;
+}
+
+
+#mainbartop{
+    position:absolute;
+    top:50px;
+    left:120px;
+    height:120px;
+    width:900px;
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;
+}
+.em{
+    display:flex;
+    flex-direction: row;
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.em:hover{
+    background-color:#2b2b2b00;
+}
+.em p{
+    color:white;
+    font-size: .9em;
+    position: relative;
+    left:15px;
+    top:14px;
+}
+.elemimg{
+    display:inline-block;
+    height:55px;
+    width: 50px;
+    background-color: #1DB954;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#eimg1{
+    background-image: url("./dailyMIX1.jpeg");
+    background-position:center ;
+    background-size: cover;
+}
+#eimg2{
+    background-image: url("./liked.jpeg");
+    background-position:center ;
+    background-size: cover;
+}
+#eimg3{
+    background-image: url("./tw.jpeg");
+    background-position:center ;
+    background-size: cover;
+}
+#eimg4{
+    background-image: url("./17.jpeg");
+    background-position:center ;
+    background-size: cover;
+}
+#eimg5{
+    background-image: url("./jackboys.jpeg");
+    background-position:center ;
+    background-size: cover;
+}
+#eimg6{
+    background-image: url("./peep.jpeg");
+    background-position:center ;
+    background-size: cover;
+}
+.h{
+    color:white;
+}
+#h1{
+    position: absolute;
+    top:210px;
+    left:50px;
+
+}
+#h2{
+    position: absolute;
+    top:540px;
+    left:50px;
+
+}
+#h3{
+    position: absolute;
+    top:895px;
+    left:50px;
+
+}
+#mainbar{
+    grid-row:2/12;
+    grid-column:4/13;
+    background-color:#121212;
+    position: relative;
+    overflow:auto;
+    border-radius: 15px;
+}
+#contain{
+    display: flex;
+    height: auto;
+    width: auto;
+    position: relative;
+    left:100px;
+}
+
+.mba{
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top:12px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.1);
+    color:white;
+    font-size: .9em;
+}
+#mainbarnav{
+    position:fixed;
+    height:40px;
+    width:100%;
+    z-index: 5;
+    background-color:inherit;
+    display:flex;
+} 
+#b1{
+    height:23px;
+    width:40px;
+    border-radius: 20px;
+
+}
+#b2{
+    height:23px;
+    width:60px;
+    border-radius: 20px;
+
+}
+#b3{
+    height:23px;
+    width:75px;
+    border-radius: 20px;
+
+}
+
+#madeforu{
+    position:absolute;
+    top:250px;
+    left:50px;
+    height:300px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#madeforu1{
+    position:absolute;
+    top:580px;
+    left:50px;
+    height:300px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#madeforu2{
+    position:absolute;
+    top:930px;
+    left:50px;
+    height:300px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.card{
+    flex: 0 0 185px;
+    height:228px;
+    width:185px;
+    /* background-color:#1DB954; */
+    transition-duration: .5s;
+}
+.miximg{
+    height:170px;
+    width:160px;
+    position:relative;
+    top:10px;
+    left:12px;
+    
+}
+.mixp{
+    position: relative;
+    top:20px;
+    left:23px;
+    font-size: .8em;
+    color:#b3b3b3;
+}
+.card:hover{
+    translate:scale(1.1);
+    border-radius: 12px;
+    background-color:#2b2b2ba3;
+}
+
+
+
+.cardr{
+    flex: 0 0 135px;
+    height: 180px;
+    width: 135px;
+    /* background-color:#1DB954; */
+    transition-duration: .5s;
+}
+.cardr:hover{
+    translate: scale(1.1);
+    border-radius: 12px;
+    background-color:#2b2b2ba3;
+}
+.miximgr{
+    height: 125px;
+    width: 115px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+.mixpr{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 0.75em;
+    color: #b3b3b3;
+}
+
+
+
+#miximg1{
+    background-image: url("./CSMIX.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg2{
+    background-image: url("./ludacrismix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg3{
+    background-image: url("./HVMEmix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg4{
+    background-image: url("./metalmix.png");
+    background-position: center;
+    background-size: cover;
+}
+#miximg5{
+    background-image: url("./rickrossmix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg6{
+    background-image: url("./mellomix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg7{
+    background-image: url("./martinmix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg8{
+    background-image: url("./eminemmix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg9{
+    background-image: url("./kygomix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg10{
+    background-image: url("./calvinmix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg11{
+    background-image: url("./djsnakemix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg12{
+    background-image: url("./aviciimix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#miximg13{
+    background-image: url("./peepxxx.png");
+    background-position: center;
+    background-size: cover;
+}
+#miximg14{
+    background-image: url("./mmmix.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#rimg1{
+    background-image: url("./paranoia.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#rimg2{
+    background-image: url("./dailyMIX1.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#rimg3{
+    background-image: url("./liked.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#rimg4{
+    background-image: url("./17.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#rimg5{
+    background-image: url("./tw.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+#rimg6{
+    background-image: url("./jackboys.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#footer{
+    height:400px;
+    width:900px;
+    color:#b3b3b3;
+    position: relative;
+    top:1000px;
+    left:75px;
+    font-size: .9em;
+    display: flex;
+
+    border-bottom-color: #b3b3b3;
+    border-bottom-width: 1px;
+    border-bottom-style: solid; 
+}
+#footer ul{
+    margin-top:100px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+#footer ul li{
+    width:50px;
+    white-space: nowrap;
+}
+#footer ul li:hover{
+    text-decoration: underline;
+}
+ul {
+    list-style: none;  /* Removes bullet points */
+    padding: 0;        /* Removes default padding */
+    margin: 0;         /* Removes default margin */
+}
+#bfoot{
+    height:200px;
+    width:100%;
+
+    position:relative;
+    top:1050px;
+}
+#bfoot ul{
+    color: #b3b3b3;
+    display: flex;
+}
+#bfoot ul li{
+    margin-top: 70px;
+    margin-left: 25px;
+}
+#bfoot span{
+    position: absolute;
+    right:100px;
+    top:70px;
+    color: #b3b3b3;
+}
+
+
+#playbar{
+    grid-row:12/13;
+    grid-column:1/13;
+    width:100%;
+    height:100%;
+    display:flex;
+    position:relative;
+}
+#pbleft{
+    height:100%;
+    width:30%;
+    color:white;
+    display:flex;
+}
+#currsong{
+    height:60px;
+    width:60px;
+    background-image: url("paranoia.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right:5px;
+    position:absolute;
+    top:7px;
+}
+#abtsong{
+    height:20px;
+    width:auto;
+    position:absolute;
+    top:24px;
+    left:68px;
+}
+#abtsong:hover{
+    text-decoration: underline;
+}
+#up{
+    font-size:.8em;
+}
+#Down{
+    font-size: .6em;
+    color: #b3b3b3;
+}
+
+
+#pbcenter{
+    height:100%;
+    width:50%;
+    position: relative;
+}
+#cont{
+    display:flex;
+    height:40px;
+    width:100%;
+    position:absolute;
+    top:20px;
+    left:200px;
+    
+}
+#shuffle{
+    height: 14px;
+    width:14px;
+    background-image: url("./ICONS/player_icon1.png");
+    background-position: center;
+    background-size: cover;
+}
+#prev{
+    height: 14px;
+    width:14px;
+    background-image: url("./ICONS/player_icon2.png");
+    background-position: center;
+    background-size: cover;
+}
+#PLAY{
+    height: 40px;
+    width:40px;
+    background-image: url("./ICONS/PLAY.jpeg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    bottom:12px;
+}
+#next{
+    height: 14px;
+    width:14px;
+    background-image: url("./ICONS/player_icon4.png");
+    background-position: center;
+    background-size: cover;
+}
+#repeat{
+    height: 14px;
+    width:14px;
+    background-image: url("./ICONS/player_icon5.png");
+    background-position: center;
+    background-size: cover;
+}
+.picn{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#playrange{
+    -webkit-appearance: none; /* Remove default styles */
+    width: 375px;
+    height: 4px;
+    background: #1DB954; /* Change track background color */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+
+}
+#playrange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #ffffff; /* Change thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#currtime{
+    color:#b3b3b3;
+    font-size: .7em;
+}
+#endtime{
+    color:#b3b3b3;
+    font-size: .7em;
+}
+#PR{
+    position:relative;
+    top:37px;
+    left:100px;
+}
+#pbright{
+    height:100%;
+    width:25%;
+    display:flex;
+    position: relative;
+}
+#cicns{
+    display:flex;
+    position:absolute;
+    top:20px;
+    left:10px;
+}
+#play{
+    height:25px;
+    width: 25px;
+    background-image: url("./ICONS/controls_icon1.png");
+    background-position: center;
+    background-size: cover;
+    margin-left:5px;
+    margin-right: 5px;
+
+}
+#mic{
+    height:25px;
+    width: 25px;
+    background-image: url("./ICONS/controld_icon2.png");
+    background-position: center;
+    background-size: cover;
+    margin-left:5px;
+    margin-right: 5px;
+}
+#queue{
+    height:31px;
+    width: 31px;
+    background-image: url("./ICONS/queue.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-left:5px;
+    margin-right: 5px;
+    position:relative;
+    bottom:2.5px;
+}
+#conn{
+    height:30px;
+    width: 30px;
+    background-image: url("./ICONS/conn.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-left:5px;
+    margin-right: 5px;
+    position:relative;
+    bottom:3px;
+}
+#spk{
+    height:25px;
+    width: 25px;
+    background-image: url("./ICONS/controls_icon5.png");
+    background-position: center;
+    background-size: cover;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+#vol{
+    -webkit-appearance: none; /* Remove default styles */
+    width: 100px; 
+    height: 4px;
+    background: #1DB954; /* Change track color */
+    border-radius: 4px;
+    outline: none;
+    position:relative;
+    top:10px;
+}
+
+/* Thumb (slider button) */
+#vol::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #ffffff; /* Change thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* #vol::-webkit-slider-runnable-track {
+   
+} */
+
+
+#gradeffect{
+    height: 220px;
+    width: auto;
+    position: relative;
+    background: linear-gradient(to bottom, #1e2a33,#121212);
+    border-radius: 10px;
+}
